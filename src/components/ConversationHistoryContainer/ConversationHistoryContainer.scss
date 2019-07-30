@@ -3,7 +3,7 @@
 	position: relative;
 	.conversation-history-container {
 		overflow-y: scroll;
-		height: calc(100vh - 200px);
+		height: calc(100vh - 140px);
 		margin: 10px 0;
 		.message-container {
 			&.first {
