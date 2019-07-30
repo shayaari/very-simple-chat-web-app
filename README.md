@@ -32,8 +32,10 @@ Launches the linter, using a slightly modified version of AirBnb standard.<br>
 Builds the app for production to the `build` folder.<br>
 It correctly bundles React in production mode and optimizes the build for the best performance.
 
+
 ### `IMPORTANT NOTES 1'
 please run `very-simple-chat-server-api` project before using the app.
+
 
 ### `IMPORTANT NOTES 2`
 getServerHostUrl() function on /src/config.js
@@ -43,4 +45,10 @@ simply change it to http://localhost:3000/
 or to Your Network IP address (exmp: http://10.0.0.5:3030/)
 
 
-
+### `IMPORTANT NOTES 3`
+when the app starts you must enter a username
+for the first time the is no conversation
+so you need to start `new chat` with a another username
+then you can open the app on another tab / browser 
+and enter the second username ( the username you started a chat with )
+have fun!
