@@ -14,6 +14,7 @@ const getServerHostUrl = () => {
 export default {
     base_url: getServerHostUrl(),
     // base_url: 'http://localhost:3000',
+    // base_url: 'http://10.0.0.5:3030/', // my network ip
     app: {
         name: 'EarnChat',
     },
