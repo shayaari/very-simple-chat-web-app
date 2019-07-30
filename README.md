@@ -42,11 +42,5 @@ if the app couldn't call server api
 simply change it to http://localhost:3000/
 or to Your Network IP address (exmp: http://10.0.0.5:3030/)
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-
 
 
