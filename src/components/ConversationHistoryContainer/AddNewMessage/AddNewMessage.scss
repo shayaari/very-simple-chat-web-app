@@ -1,0 +1,27 @@
+.new-message-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    flex-direction: row;
+    padding: 0 25px 25px;
+	.input-container {
+		box-sizing: border-box;
+		flex-shrink: 0;
+		flex-shrink: 0;
+		flex-grow: 1;
+		padding-right: 8px;
+	}
+	
+	button {
+		padding: 0 50px;
+	}
+}
+
+@media only screen and (max-width: 900px) {
+	.new-message-container {
+		padding: 0;
+		button {
+			padding: 0 35px;
+		}
+	}
+}

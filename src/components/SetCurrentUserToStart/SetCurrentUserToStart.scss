@@ -1,0 +1,13 @@
+.select-current-user-container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10% auto 0;
+	div {
+		margin-bottom: 5px;
+    }
+    .name {
+        font-size: 20px;
+        font-weight: bold;
+    }
+}

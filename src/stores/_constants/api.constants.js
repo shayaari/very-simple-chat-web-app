@@ -1,0 +1,6 @@
+export default {
+    TYPE: 'api',
+
+    API_INITIALIZE_APP: 'API_INITIALIZE_APP',
+    API_WAITING_REQUEST: 'API_FETCH_WAITING_REQUEST',
+};

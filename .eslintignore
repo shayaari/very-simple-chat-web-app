@@ -1,0 +1,14 @@
+# don't try to lint our styling
+**/*.css
+**/*.scss
+
+# don't include assets
+**/assets/**
+
+# ignore files that came with create-react-app
+# we aren't going to edit them anyway
+src/serviceWorker.js
+
+# ignore all project files
+# build/**
+# src/**

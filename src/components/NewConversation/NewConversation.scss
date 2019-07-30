@@ -1,0 +1,18 @@
+.new-conversation-container {
+    margin: 70px 20% 0;
+    display: flex;
+    flex-direction: column;
+    div { 
+        margin-bottom: 5px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .app {
+		&[data-path="/new-conversation"] {
+			.conversation-list-container {
+				display: none;
+			}
+		}
+	}
+}

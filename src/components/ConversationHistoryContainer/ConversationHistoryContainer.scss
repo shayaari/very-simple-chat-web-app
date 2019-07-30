@@ -1,0 +1,105 @@
+.conversation-history-wrap {
+	padding: 0 25px;
+	position: relative;
+	.conversation-history-container {
+		overflow-y: scroll;
+		height: calc(100vh - 200px);
+		margin: 10px 0;
+		.message-container {
+			&.first {
+				border-top-left-radius: 8px;
+			}
+			&.last {
+				padding-bottom: 8px;
+				border-bottom-left-radius: 8px;
+			}
+			&.dark {
+				background: #4a76a81f;
+			}
+			.top-container {
+				display: grid;
+				grid-template-columns: 60px auto auto;
+				align-items: center;
+				padding: 8px 8px 0;
+				margin-top: 8px;
+				.time-warp {
+					text-align: right;
+				}
+				.author-name {
+					font-weight: bold;
+					font-size: 18px;
+				}
+			}
+			.body-container {
+				padding-left: 70px;
+			}
+		}
+	}
+	.conversation-toolbar {
+		display: flex;
+		justify-content: space-between;
+		margin: 8px 0px;
+		div {
+			height: 50px;
+			display: flex;
+			align-items: center;
+			border-radius: 4px;
+			font-weight: bold;
+			i {
+				margin-left: 7px;
+			}
+			&.back-btn {
+				cursor: pointer;
+				background: #4a76a8;
+				color: white;
+				padding: 8px;
+			}
+		}
+	}
+}
+
+@media only screen and (min-width: 900px) {
+	.conversation-toolbar {
+		display: none !important;
+	}
+}
+
+
+::-webkit-scrollbar {
+	width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+	background: rgba(216, 223, 225, 0.45); 
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+	background: rgba(137, 160, 179, 0.5);
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+	background: rgba(20, 84, 136, 0.5); 
+}
+
+
+
+@media only screen and (max-width: 900px) {
+	.conversation-history-wrap {
+		.conversation-history-container {
+			height: calc(100vh - 280px);
+		}
+	}
+    .app {
+		&.home {
+            .welcome-message-container {
+                display: none;
+            }
+            .conversation-history-wrap {
+                display: none;
+            }
+        }
+	}
+}

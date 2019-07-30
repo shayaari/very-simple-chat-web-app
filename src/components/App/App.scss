@@ -1,0 +1,53 @@
+.app {
+    display: flex;
+    padding: 0;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.app--container {
+    margin-top: 60px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 250px auto;
+}
+
+// button generic style
+button, .btn {
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    background-color: #5181b8;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+    font-size: 18px;
+    font-family: "Quicksand";
+    display: flex;
+    justify-content: center;
+    padding: 5px;
+    cursor: pointer;
+    &:hover {
+        background-color: #6b9acf;
+    }
+}
+
+input {
+    color: #4a4a4a;
+    background-color: #ffffff;
+    border: 1px solid #889bb1;
+    border-radius: 5px;
+    cursor: text;
+    width: 100%;
+    transition: all 0.1s linear;
+    padding: 10px 15px;
+}
+
+@media only screen and (max-width: 900px) {
+    .app--container {
+        grid-template-columns: none;
+        grid-template-rows: auto;
+    }
+}
